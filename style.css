@@ -1,0 +1,319 @@
+body {
+    background-color: whitesmoke;
+    padding: 0%;
+    margin: 0%;
+    font-family:monospace;
+}
+header{
+    background-color: lightblue;
+    padding: 10px;
+    box-shadow:grey 5px 5px 5px;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    height: 10%;
+}
+.m-nav-keys, .m-nav-wrapper{
+    display: none;
+}
+main{
+    padding: 20px 30px;
+}
+main h1{
+    text-align: center;
+    font-size: 2rem;
+}
+a{
+    color : black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+a:hover{
+    color : red;
+    text-decoration: underline;
+}
+.name-wrapper{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    /* width: 20%; */
+    text-shadow: grey 1px 1px;
+}
+.nav-wrapper{
+    display: inline-block;
+    text-align: right;
+}
+.nav-wrapper ul{
+    display: inline-flex;
+    list-style-type: none;
+    text-align: right;
+    position: absolute;
+    right: 1%;
+    top: 10px;
+}
+.nav-wrapper ul li{
+    margin: 2px;
+    padding: 7px;
+}
+.m-nav-wrapper{
+    background-color: lightblue;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+}
+.m-nav-wrapper ul{
+    list-style-type: none;
+    padding: 2%;
+    padding-top: 10px;
+}
+.m-nav-wrapper ul li{
+    margin: 20px 10px;
+}
+.bio-container{
+    margin-top: 80px;
+}
+.bio-wrapper{
+    display: inline-flex;
+}
+.bio-image{
+    width: 30%;
+}
+.bio-image img{
+    border-radius: 5%;
+    box-shadow: grey 5px 5px 5px;
+    height: 100%;
+    width: 100%;
+}
+.bio-description{
+    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 30px;
+    width: 70%;
+}
+.all-tools-container{
+    text-align: center;
+}
+.tool-card{
+    display: inline-block;
+    padding: 0%;
+    /* font-weight: bolder; */
+    margin: 10px;
+    text-align: center;
+    /* background-color: lightblue; */
+    box-shadow: grey 5px 5px 5px;
+    font-size: 1rem;
+    /* padding-top:0%; */
+}
+.tool-card div img{
+    width: 10rem;
+    height: 8rem;
+}
+.card-label{
+    padding: 10px;
+}
+.skill-card div img{
+    width: 15rem;
+}
+.past-work-card{
+    display: inline-block;
+    width: 20%;
+}
+.past-work-card h3{
+    margin: 1px;
+    padding: 2px;
+}
+.past-work-card div img{
+    width: 100%;
+    height: 12rem;
+}
+.past-work-card a{
+    display: block;
+    padding: 10px;
+}
+/* .ex-container ul{
+    list-style-type:lower-greek
+} */
+.ex-container ul li ul{
+    list-style-type: none;
+}
+.ex-container ul li{
+    margin: 40px 10px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.ex-container ul li ul li{
+    font-weight: normal;
+    margin: 5px;
+    font-size: 1rem;
+}
+.contact-cards{
+    display: inline-block;
+}
+.footer-wrapper{
+    background-color: lightblue;
+    padding: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+.link-icons{
+    font-size: 1.5rem;
+    /* color: lightblue; */
+    margin: 5px;
+    font-weight: bolder;
+}
+@media screen and (max-width : 1200px){
+    .past-work-card{
+        display: inline-block;
+        width: 40%;
+    }
+}
+@media screen and (max-width : 1000px) {
+    .bio-image{
+        width: 35%;
+    }
+    .bio-description{
+        width: 65%;
+    }
+}
+@media screen and (max-width : 900px) {
+    .nav-wrapper ul{
+        display: none;
+    }
+    .m-nav-keys{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 40px;
+        cursor: pointer;
+    }
+    #hide-btn{
+        display : none;
+    }
+    .contact-cards{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width : 800px) {
+    .bio-image{
+        width: 40%;
+    }
+    .bio-description{
+        width: 60%;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width : 750px) {
+    .all-tools-container{
+        margin: 0%;
+        padding: 0%;
+    }
+    .bio-wrapper{
+        display: block;
+    }
+    .bio-image{
+        width: 100%;
+    }
+    .bio-image img{
+        height: 25rem;
+    }
+    .bio-description{
+        width: 100%;
+        font-size: 1rem;
+        padding-top: 20px;
+    }
+    .tool-card div{
+        font-weight: bolder;
+        font-size: 0.8rem;
+    }
+    .tool-card div img{
+        width: 8rem;
+    }
+    .past-work-card{
+        display: block;
+        width: 100%;
+    }
+    .past-work-card div a{
+        font-weight: normal;
+    }
+    .past-work-card div img{
+        display: inline-block;
+        width: 100%;
+        height: 20rem;
+    }
+    .contact-cards{
+        width: 20%;
+    }
+}
+@media screen and (max-width : 500px){
+    main{
+        padding: 5px 5px;
+    }
+    .name-wrapper{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+    .bio-container{
+        padding: 10px;
+    }
+    .tool-card{
+        display: block;
+    }
+    .tool-card div{
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    .tool-card div img{
+        width: 100%;
+        height: 15rem;
+    }
+    .all-tools-container{
+        text-align: center;
+    }
+    .contact-cards{
+        display: inline-block;
+    }
+    /* .m-nav-keys{
+        top: 18px;
+    } */
+    main h1{
+        text-align: center;
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+    .bio-image img{
+        height: 15rem;
+    }
+    .bio-description{
+        padding: 10px 0%;
+        font-size: 1rem;
+        line-height: 30px;
+        width: 100%;
+    }
+    .all-tools-container{
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+        padding: 5px;
+    }
+    .tool-card{
+        margin: 25px 0%;
+    }
+    .past-work-card{
+        display: block;
+        width: 100%;
+    }
+    .ex-container ul{
+        padding: 20px;
+    }
+    .ex-container ul li{
+        font-size: 1rem;
+        margin: 0%;
+        margin-bottom: 20px;
+    }
+    .ex-container ul li ul{
+        padding: 0%;
+    }
+}
