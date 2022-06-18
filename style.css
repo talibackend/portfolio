@@ -173,7 +173,7 @@ a:hover{
     .header-wrapper{
         display: inline-flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 100%;
         padding: 10px 0%;
     }
@@ -181,6 +181,7 @@ a:hover{
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
+        margin-right: 20px;
     }
     #hide-btn{
         display : none;
