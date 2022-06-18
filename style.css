@@ -30,7 +30,7 @@ main h1{
     font-size: 2rem;
 }
 a{
-    color : black;
+    color : rgb(73, 59, 59);
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -261,7 +261,6 @@ a:hover{
         width: 100%;
     }
     .tool-card div{
-        width: 100%;
         font-weight: normal;
         font-size: 1rem;
     }
