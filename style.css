@@ -6,13 +6,18 @@ body {
 }
 header{
     background-color: whitesmoke;
-    padding: 10px;
+    padding: 5px;
     box-shadow:grey 2px 2px 2px;
     position: fixed;
     top: 0%;
     right: 0%;
     left: 0%;
-    height: 10%;
+}
+.desktop-header{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .m-nav-keys, .m-nav-wrapper{
     display: none;
@@ -33,25 +38,14 @@ a:hover{
     color : red;
 }
 .name-wrapper{
-    display: inline-block;
     margin-left: 20px;
-    margin-top: 20px;
     font-size: 1.5rem;
     font-weight: bolder;
-    /* width: 20%; */
     text-shadow: grey 1px 1px;
-}
-.nav-wrapper{
-    display: inline-block;
-    text-align: right;
 }
 .nav-wrapper ul{
     display: inline-flex;
     list-style-type: none;
-    text-align: right;
-    position: absolute;
-    right: 1%;
-    top: 10px;
 }
 .nav-wrapper ul li{
     margin: 2px;
@@ -131,9 +125,6 @@ a:hover{
     display: block;
     padding: 10px;
 }
-/* .ex-container ul{
-    list-style-type:lower-greek
-} */
 .ex-container ul li ul{
     list-style-type: none;
 }
@@ -158,7 +149,6 @@ a:hover{
 }
 .link-icons{
     font-size: 1.5rem;
-    /* color: whitesmoke; */
     margin: 5px;
     font-weight: bolder;
 }
@@ -180,11 +170,15 @@ a:hover{
     .nav-wrapper ul{
         display: none;
     }
+    .header-wrapper{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0%;
+    }
     .m-nav-keys{
         display: block;
-        position: absolute;
-        right: 5%;
-        top: 25px;
         cursor: pointer;
         font-size: 1.5rem;
     }
@@ -248,11 +242,7 @@ a:hover{
 }
 @media screen and (max-width : 500px){
     header{
-        /* height: 9%; */
-        padding: 5px;
-    }
-    main{
-        /* padding: 5px 5px; */
+        height: auto;
     }
     .name-wrapper{
         font-size: 1rem;
@@ -284,9 +274,6 @@ a:hover{
     .contact-cards{
         display: inline-block;
     }
-    /* .m-nav-keys{
-        top: 18px;
-    } */
     main h1{
         text-align: center;
         font-size: 1.7rem;
