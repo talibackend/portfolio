@@ -247,6 +247,10 @@ a:hover{
     }
 }
 @media screen and (max-width : 500px){
+    header{
+        /* height: 9%; */
+        padding: 5px;
+    }
     main{
         /* padding: 5px 5px; */
     }
