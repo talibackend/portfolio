@@ -271,12 +271,15 @@ a:hover{
     .all-tools-container{
         text-align: center;
     }
-    /* .contact-cards{
+    .contact-cards{
+        /* display: block; */
+        /* background-color: red;
         display: inline-block;
-    } */
-    .all-contact-cards{
-        background-color: red;
-        display: inline-flex;
+        width: 10%; */
+        /* display: block; */
+        /* width: auto;
+        padding: 10px;
+        margin : 0% 10px; */
     }
     main h1{
         text-align: center;
